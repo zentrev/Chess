@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: a3a3a3;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Limbo.SecondaryController">
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox fx:id="BattleBox" alignment="CENTER" prefHeight="600.0" prefWidth="700.0">
+               <children>
+                  <Button fx:id="Fight" mnemonicParsing="false" text="Fight">
+                     <font>
+                        <Font name="Viner Hand ITC" size="36.0" />
+                     </font>
+                  </Button>
+               </children></HBox>
+         </children></HBox>
+   </center>
+   <left>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Button fx:id="Battle11" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Melee" />
+                  <Label fx:id="WhiteMelee" text="00" />
+                  <Button fx:id="Battle12" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Ranged" />
+                  <Label fx:id="WhiteRanged" text="00" />
+                  <Button fx:id="Battle13" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Defend" />
+                  <Label fx:id="WhiteDeffend" text="00" />
+                  <Button fx:id="Battle14" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Heal" />
+                  <Label fx:id="WhiteHeal" text="00" />
+               </children>
+               <HBox.margin>
+                  <Insets top="130.0" />
+               </HBox.margin>
+            </VBox>
+            <Pane maxHeight="400.0" prefHeight="400.0" prefWidth="20.0" style="-fx-background-color: Red;">
+               <HBox.margin>
+                  <Insets top="100.0" />
+               </HBox.margin>
+               <children>
+                  <BorderPane fx:id="WhiteRed" prefHeight="400.0" prefWidth="10.0" />
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+   </left>
+   <right>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane maxHeight="400.0" prefHeight="400.0" prefWidth="20.0" style="-fx-background-color: Red;">
+               <children>
+                  <BorderPane fx:id="BlackRed" prefHeight="400.0" prefWidth="10.0" />
+               </children>
+               <HBox.margin>
+                  <Insets top="100.0" />
+               </HBox.margin>
+            </Pane>
+            <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Button fx:id="Battle21" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Melee" />
+                  <Label fx:id="BlackMelee" text="00" />
+                  <Button fx:id="Battle22" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Ranged" />
+                  <Label fx:id="BlackRanged" text="00" />
+                  <Button fx:id="Battle23" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Defend" />
+                  <Label fx:id="BlackDeffend" text="00" />
+                  <Button fx:id="Battle24" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="Heal" />
+                  <Label fx:id="BlackHeal" text="00" />
+               </children>
+               <HBox.margin>
+                  <Insets top="130.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </right>
+</BorderPane>
